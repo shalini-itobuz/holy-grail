@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASk @</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="header">
+      <h1>Header</h1>
+  </section>
+  <section class="midsection">
+      <div class="aside">
+          <h1>Aside</h1>
+      </div>
+      <div class="midsection-righsection">
+          <div class="nav">
+              <h1>Nav</h1>
+          </div>
+          <div class="article">
+              <h1>Article</h1>
+          </div>
+      </div>
+  </section>
+  <section class="footer">
+      <h1>Footer</h1>
+  </section>
+</body>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  
+  .footer,.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+  }
+  
+  .footer{
+    background-color: #ffecb3;
+  }
+  .header{
+    background-color: #ffcdd2;
+  }
+  
+  .midsection{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    
+    height: 60vh;
+  }
+  .aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1bee7;
+    height: 20vh;
+  }
+  
+  
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #bbdefb;
+  }
+  .article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #dcedc8;
+  }
+  
+  @media screen and (min-width:768px) {
+    .footer,.header{
+        height: 10vh;
+  
+    }
+  
+    .aside{
+        height: 100%;
+        width: 50%;
+    }
+    .midsection{
+        flex-direction: row;
+        height: 80vh;
+    }
+  
+  
+    .midsection-righsection{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .nav{
+        width: 100%;
+        height: 10%;
+    }
+    .article{
+        height: 90%;
+    }
+  }</style>
+</html>
